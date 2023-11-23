@@ -1,0 +1,70 @@
+body {
+  background-color: whitesmoke;
+}
+
+/* kada vise elemenata imaju isto svojstvo */
+h3,
+h4 {
+  color: orange;
+}
+
+/* Pristupanje klasi */
+.desno_poravnanje {
+  text-align: right;
+}
+
+.crveni_tekst {
+  color: red;
+}
+
+.drugi {
+  background-color: yellow;
+}
+
+/* Pristupanje ID-ju */
+#treci {
+  background-color: bisque;
+  /* border: solid 3px red; */
+  border-bottom: dotted 5px red;
+}
+
+/* kombo */
+
+/* .drugi,
+#treci {
+  color: blue;
+} */
+
+/* PRIORITET SELEKTORA -> element < klasa < id < inline_CSS < !important */
+/* istrazi !IMPORTANT */
+li {
+  color: limegreen;
+}
+.stavka {
+  color: blue;
+}
+#prva_stavka {
+  color: orange;
+}
+
+#cetvrta_stavka {
+  color: brown;
+}
+
+p {color: gray;}
+
+div p {color: rgb(47, 148, 114);}
+div>p {border: solid 2px red;}
+
+/* stilizacija linka */
+
+
+
+/* pseudo selektori */
+
+p:first-child {font-weight: bold;}
+
+/* (3) - treci   (3n) - svaki treci */
+li:nth-child(3n) {
+  font-weight: bold;
+}
